@@ -1,6 +1,6 @@
 pipeline {
     agent any
- 
+    
     stages {
         stage('Build') {
             steps {
@@ -15,10 +15,7 @@ pipeline {
         stage('Binary Search') {
             steps {
                 script {
-                    def arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-                    def target = 7
-                    def result = binary_search(arr, target)
-                    echo "Target $target found at index $result"
+                    // Add binary search algorithm execution here
                 }
             }
         }
